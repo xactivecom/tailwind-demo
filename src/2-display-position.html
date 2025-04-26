@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind Site</title>
+</head>
+<body class="container flex">
+    <main class="p-5">
+        <!-- Display -->
+        <h1 class="text-left text-4xl my-6 font-bold">Display</h1>
+
+        <section class="flex space-x-4 mt-6">
+            <div class="ps-1 w-1/2 bg-gray-100 rounded-xl">
+                <p class="text-xl font-bold">Static</p>
+                <p class="text-red-800">Use the static utility to position an element according to normal flow.</p>
+            </div>
+            <div class="w-1/2 bg-gray-300 p-1">
+                <p class="text-xl font-bold">Static parent</p>
+                <buttom class="static bottom-0 left-4 text-blue-100 bg-blue-600 border-1 p-2 rounded-md hover:bg-blue-800">Static child</buttom>
+            </div>
+        </section>
+
+        <section class="flex space-x-4 mt-6">
+            <div class="ps-1 w-1/2 bg-gray-200 rounded-xl">
+                <p class="text-xl font-bold">Relative</p>
+                <p class="text-red-800">Use the static utility to position an element relative to itself.</p>
+            </div>
+            <div class="w-1/2 bg-gray-300 p-1">
+                <p class="text-xl font-bold">Relative parent</p>
+                <buttom class="relative bottom-0 left-4 text-green-100 bg-green-600 border-1 p-2 rounded-md hover:bg-green-800">Relative position</buttom>
+            </div>
+        </section>
+
+        <section class="flex space-x-4 mt-6">
+            <div class="ps-1 w-1/2 bg-gray-300 rounded-xl">
+                <p class="text-xl font-bold">Absolute</p>
+                <p class="text-red-800">Use the absolute utility to position an element absolute to nearest ancestor.</p>
+            </div>
+            <div class="relative w-1/2 bg-gray-300 p-1">
+                <p class="text-xl font-bold">Absolute parent</p>
+                <buttom class="absolute bottom-2 left-4 text-green-100 bg-green-600 border-1 p-2 rounded-md hover:bg-green-800">Absolute child</buttom>
+            </div>
+        </section>
+
+        <section class="flex space-x-4 mt-6">
+            <div class="ps-1 w-1/2 bg-gray-300 rounded-xl">
+                <p class="text-xl font-bold">Sticky</p>
+                <p class="text-red-800">Use the sticky utility to position an element relative until it crosses a threshold, then is pinned to the viewport.</p>
+            </div>
+            <div class="w-1/2 bg-gray-300 p-1 h-[100px] overflow-y-scroll flex flex-col">
+                <p class="sticky top-0 text-xl font-bold">Sticky position</p>
+                <buttom class="bottom-2 left-4 text-red-100 bg-red-600 border-1 p-2 rounded-md hover:bg-red-800">Scroll 1</buttom>
+                <buttom class="bottom-2 left-4 text-red-100 bg-red-600 border-1 p-2 rounded-md hover:bg-red-800">Scroll 2</buttom>
+                <buttom class="bottom-2 left-4 text-red-100 bg-red-600 border-1 p-2 rounded-md hover:bg-red-800">Scroll 3</buttom>
+            </div>
+        </section>
+
+
+        <!-- Borders -->
+        <h1 class="text-left text-4xl my-6 font-bold">Borders</h1>
+
+        <div class="w-1/2 bg-red-300 mt-1 p-4 rounded-none">
+            <p>rounded-none</p>
+        </div>
+        <div class="w-1/2 bg-purple-300 mt-1 p-4 rounded-sm">
+            <p>rounded-sm</p>
+        </div>
+        <div class="w-1/2 bg-red-300 mt-1 p-4 rounded-md">
+            <p>rounded-md</p>
+        </div>
+        <div class="w-1/2 bg-purple-300 mt-1 p-4 rounded-lg">
+            <p>rounded-lg</p>
+        </div>
+        <div class="w-1/2 bg-red-300 mt-1 p-4 rounded-xl">
+            <p>rounded-xl</p>
+        </div>
+        <div class="w-1/2 bg-blue-300 mt-1 p-4 rounded-t-xl">
+            <p>rounded-t-xl</p>
+        </div>
+        <div class="w-1/2 bg-green-300 mt-1 p-4 rounded-b-xl">
+            <p>rounded-b-xl</p>
+        </div>
+
+        <div class="w-1/2 bg-blue-300 mt-1 p-4 border-4">
+            <p>border-4</p>
+        </div>
+        <div class="w-1/2 bg-yellow-300 mt-1 p-4 b border-8">
+            <p>border-8</p>
+        </div>
+
+        <div class="w-1/2 bg-red-300 mt-1 p-4 border-b-4 border-red-500">
+            <p>border-b-4</p>
+        </div>
+        <div class="w-1/2 bg-purple-300 mt-1 p-4 border-red-500 border-l-4">
+            <p>border-l-4</p>
+        </div>
+
+        <div class="flex mt-1 space-x-4">
+            <div class="w-1/2 bg-red-300 p-4 border-red-500 border-y-4">
+                <p>border-t-4 border-b-4</p>
+            </div>
+            <div class="w-1/2 bg-purple-300 p-4 border-red-500 border-x-4">
+                <p>border-r-4 border-l-4</p>
+            </div>
+        </div>
+
+        <div class="flex space-x-4">
+            <div class="w-1/2 bg-blue-300 mt-1 p-4 shadow-md shadow-blue-500">
+                <p>shadow-blue-500</p>
+            </div>
+            <div class="w-1/2 bg-red-300 mt-1 p-4 shadow-md shadow-red-500">
+                <p>shadow-blue-500</p>
+            </div>
+        </div>
+
+        <div class="flex mt-2 space-x-4">
+            <div class="w-1/2 bg-purple-300 p-4 opacity-25">
+                <p>opacity-25</p>
+            </div>
+            <div class="w-1/2 bg-red-300 p-4 opacity-50">
+                <p>opacity-50</p>
+            </div>
+            <div class="w-1/2 bg-purple-300 p-4 opacity-75">
+                <p>opacity-75</p>
+            </div>
+            <div class="w-1/2 bg-red-300 p-4 opacity-100">
+                <p>opacity-100</p>
+            </div>
+        </div>
+
+        <div class="flex mt-2 space-x-4">
+            <div class="w-1/2 bg-purple-300 p-4 opacity-25 hover:opacity-100">
+                <p>opacity-25 hover:opacity</p>
+            </div>
+            <div class="w-1/2 bg-red-300 p-4 opacity-50 hover:opacity-100">
+                <p>opacity-50 hover:opacity</p>
+            </div>
+            <div class="w-1/2 bg-purple-300 p-4 opacity-75 hover:opacity-100">
+                <p>opacity-75 hover:opacity</p>
+            </div>
+            <div class="w-1/2 bg-red-300 p-4 opacity-100 hover:opacity-50">
+                <p>opacity-100 hover:opacity</p>
+            </div>
+        </div>
+
+        <!-- Images -->
+        <h1 class="text-left text-4xl my-6 font-bold">Images</h1>
+
+        <p>League logo</p>
+        <section class="grid grid-cols-3 gap-4 m-auto">
+            <div class="bg-[url(./images/BOS_light.svg)] bg-no-repeat size-24 bg-left-top"></div>
+            <div class="bg-[url(./images/BOS_light.svg)] bg-no-repeat size-24 bg-top"></div>
+            <div class="bg-[url(./images/BOS_light.svg)] bg-no-repeat size-24 bg-right-top"></div>
+        </section>
+
+        <p class="mt-6">Player size 20</p>
+        <div class="flex size-20">
+            <img class="h-auto object-contain max-w-full drop-shadow-md rounded-md" src="./images/8476981.png" alt="player name" />
+        </div>
+
+        <p class="mt-6">Player size 40</p>
+        <div class="flex size-40">
+            <img class="h-auto object-contain max-w-full drop-shadow-md rounded-md" src="./images/8476981.png" alt="player name" />
+        </div>
+
+        <p class="mt-6">Player size 80</p>
+        <div class="flex size-80">
+            <img class="h-auto object-contain max-w-full drop-shadow-md rounded-md" src="./images/8476981.png" alt="player name" />
+        </div>
+
+    </main>
+</body>
+</html>

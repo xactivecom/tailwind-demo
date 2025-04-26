@@ -1,0 +1,16 @@
+{
+    "name": "tailwind-site",
+    "version": "1.0.0",
+    "description": "Simple file structure for Tailwind projects",
+    "main": "index.js",
+    "scripts": {
+        "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./src/css/style.css --watch",
+        "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/css/style.css"
+    },
+    "author": "Stuart Thompson",
+    "license": "MIT",
+    "dependencies": {
+        "@tailwindcss/cli": "^4.1.4",
+        "tailwindcss": "^4.1.4"
+    }
+}

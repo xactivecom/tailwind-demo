@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind Site</title>
+</head>
+<body class="container flex">
+    <main class="p-5">
+        <!-- Typography -->
+        <h1 class="text-left text-4xl my-6 font-bold">Typography</h1>
+
+        <h2 class="text-4xl my-4 font-medium">Font Family</h2>
+        <hr class="py-2" />
+        <p class="font-sans">Sans serif</p>
+        <p class="font-serif">Serif</p>    
+        <p class="font-mono">Monospace</p>    
+
+        <h2 class="text-4xl my-4 font-medium">Font Size</h2>
+        <hr class="py-2" />
+        <p class="text-[8px]">Some legal 8px text that is really small and is very hard to read.</p>
+        <p class="text-sm">Small 0.875rem (14px)</p>
+        <p class="text-base">Base 1.0rem (16px)</p>
+        <p class="text-lg">Large 1.125rem (18px)</p>
+        <p class="text-xl">XLarge 1.25rem (20px)</p>
+        <p class="text-2xl">2XLarge 1.5rem (24px)</p>
+
+        <h2 class="text-4xl my-4 font-medium">Font Weight</h2>
+        <hr class="py-2" />
+        <p class="font-thin">Thin 100</p>
+        <p class="font-light">Light 300</p>
+        <p class="font-normal">Normal 400</p>
+        <p class="font-medium">Medium 500</p>
+        <p class="font-semibold">Semibold 600</p>
+        <p class="font-bold">Bold 700</p>
+        <p class="font-extrabold">Extrabold 800</p>
+        <p class="font-black">Black 900</p>
+
+        <h2 class="text-4xl my-4 font-medium">Text Decoration</h2>
+        <hr class="py-2" />
+        <p class="underline">Underline</p>
+        <p class="underline hover:no-underline">Underline no hover</p>
+        <p class="hover:underline">Underline hover</p>
+
+        <h2 class="text-4xl my-4 font-medium">Text Transform</h2>
+        <hr class="py-2" />
+        <p class="uppercase text-right">upper right</p>
+        <p class="lowercase text-center">lower center</p>
+        <p class="titlecase text-end">title end</p>
+        <p class="capitalize">capitalize all words</p>
+
+        <h2 class="text-4xl my-4 font-medium">Text Color</h2>
+        <hr class="py-2" />
+        <p class="text-red-500">Red 500</p>
+        <p class="text-blue-500">Blue 500</p>
+        <p class="text-indigo-500">Indigo 500</p>
+        <p class="text-green-500">Green 500</p>
+
+        <!-- Container Sizing -->
+        <h1 class="text-left text-4xl my-6 font-bold">Container Sizing</h1>
+
+        <p class="mt-6">DIV fixed w-?</p>
+        <div class="w-96 bg-emerald-300">w-96</div>
+        <div class="w-40 bg-emerald-300">w-40</div>
+        <div class="w-24 bg-emerald-300">w-24</div>
+
+        <p class="mt-6">DIV h-32 py-5 min-w-? stretched to container w</p>
+        <div class="h-32 w-40 py-5 bg-green-400">
+            <div class="min-w-80 bg-amber-100">min-w-80</div>
+            <div class="min-w-24 bg-amber-100">min-w-24</div>
+        </div>
+
+        <p class="mt-6">DIV h-32 gap-6 py-5 max-w-?</p>
+        <div class="h-32 w-[500px] flex flex-col gap-6 py-5 bg-blue-400">
+            <div class="max-w-80 bg-amber-300">max-w-80</div>
+            <div class="max-w-24 bg-amber-300">max-w-24</div>
+        </div>
+
+        <p class="mt-6">DIV flex center gap-6 p-2 fixed h-?</p>
+        <div class="h-[300] gap-6 p-2 flex justify-center bg-emerald-800">
+            <div class="h-1vh w-8 bg-amber-100">h-1vh</div>
+            <div class="h-48 w-8 bg-amber-300">h-48</div>
+            <div class="h-32 w-8 bg-amber-300">h-32</div>
+            <div class="h-1/2 w-8 bg-amber-600">h-1/2</div>
+        </div>
+    
+        <p class="mt-6">DIV flex gap-6 p-2 fixed size-? square</p>
+        <div class="flex gap-6 p-2 bg-slate-800">
+            <div class="size-16 bg-slate-100">size-16</div>
+            <div class="size-24 bg-slate-300">size-24</div>
+            <div class="size-32 bg-slate-500">size-32</div>
+        </div>
+
+        <p class="mt-6">DIV flex min-h-36 margin - orange block uses relative margins</p>
+        <div class="flex min-h-36 bg-slate-800">
+            <div class="m-2 size-16 bg-red-300">m-2</div>
+            <div class="mt-10 size-16 bg-purple-300">mt-10</div>
+            <div class="mr-16 size-16 bg-orange-300">mr-16</div>
+            <div class="mt-10 mr-2 size-16 bg-green-300">mt-10 & mr-2</div>
+            <div class="size-48 relative bg-orange-600">
+                <div class="mx-16 absolute size-16 bg-red-300">mx-16</div>
+                <div class="my-16 absolute size-16 bg-purple-300">my-16</div>
+                <div class="my-16 mx-32 absolute size-16 bg-green-300">my-32 & mx-16</div>
+            </div>
+        </div>
+
+        <p class="mt-6">DIV flex min-h-36 padding</p>
+        <div class="flex min-h-36 space-x-4 bg-slate-100">
+            <div class="pt-4 size-16 bg-purple-300">pt-4</div>
+            <div class="pt-6 size-16 bg-purple-300">pt-6</div>
+            <div class="pt-8 size-16 bg-purple-300">pt-8</div>
+            <div class="pl-8 size-16 bg-purple-300">pl-8</div>
+            <div class="pr-8 size-16 bg-purple-300">pr-8</div>
+        </div>
+
+        <p class="mt-6">DIV grid-3 gap-4</p>
+        <div class="grid grid-cols-3 gap-4 bg-white-100">
+            <div class="border border-red-300">border red</div>
+            <div class="border border-green-300">border green</div>
+            <div class="border border-yellow-300">border yellow</div>
+            <div class="border border-blue-300">border blue</div>
+            <div class="border border-orange-300">border orange</div>
+            <div class="border border-gray-300">border gray</div>
+        </div>
+
+        <p class="mt-6">DIV placeholder</p>
+        <div class="flex flex-cols">
+            <label for="name" class="my-2 mr-2 text-red-500">Text field: </label>
+            <input name="name" type="text" placeholder="enter text here" class="placeholder-gray-300 border border-red-500 p-1">
+        </div>
+    </main>
+</body>
+</html>

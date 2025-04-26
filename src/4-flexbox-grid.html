@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind Site</title>
+</head>
+<body class="container flex">
+    <main class="p-5">
+        <!-- Flex -->
+        <h1 class="text-left text-4xl my-6 font-bold">Flex</h1>
+
+        <p class="mt-6">Flex col gap-y-1</p>
+        <div class="flex flex-col gap-y-1">
+            <div class="basis-1/4 bg-blue-200 p-4">01</div>
+            <div class="basis-1/4 bg-blue-300 p-4">02</div>
+            <div class="basis-1/4 bg-blue-200 p-4">03</div>
+        </div>
+
+        <p class="mt-6">Flex row basis-1/4 gap-x-1</p>
+        <div class="flex flex-row gap-x-1">
+            <div class="basis-1/4 bg-blue-200 p-4">01</div>
+            <div class="basis-1/4 bg-blue-300 p-4">02</div>
+            <div class="basis-1/4 bg-blue-200 p-4">03</div>
+            <div class="basis-1/4 bg-blue-300 p-4">04</div>
+        </div>
+
+        <p class="mt-6">Flex row basis-1/2 gap-x-1</p>
+        <div class="flex flex-row gap-x-1">
+            <div class="basis-1/2 bg-blue-200 p-4">01</div>
+            <div class="basis-1/2 bg-blue-300 p-4">02</div>
+        </div>
+
+        <p class="mt-6">Flex wrap w-60 gap-y-2</p>
+        <div class="flex flex-wrap gap-y-2">
+            <div class="w-60 bg-blue-200 p-4">60</div>
+            <div class="w-60 bg-blue-300 p-4">60</div>
+            <div class="w-60 bg-blue-200 p-4">60</div>
+            <div class="w-60 bg-blue-300 p-4">60</div>
+        </div>
+
+        <p class="mt-6">Flex grow relative gap-2</p>
+        <div class="flex gap-2">
+            <div class="flex-none w-14 h-14 bg-blue-200">1/4</div>
+            <div class="grow h-14 bg-blue-300">1/4</div>
+            <div class="flex-none w-14 h-14 bg-blue-200">1/4</div>
+        </div>
+
+        <p class="mt-6">Flex justify-start gap-2</p>
+        <div class="flex justify-start gap-2">
+            <div class="w-30 bg-blue-100 p-4">30</div>
+            <div class="w-30 bg-blue-200 p-4">30</div>
+        </div>
+
+        <p class="mt-6">Flex justify-center gap-2</p>
+        <div class="flex justify-center gap-2">
+            <div class="w-30 bg-blue-100 p-4">30</div>
+            <div class="w-30 bg-blue-200 p-4">30</div>
+        </div>
+
+        <p class="mt-6">Flex justify-end gap-2</p>
+        <div class="flex justify-end gap-2">
+            <div class="w-30 bg-blue-100 p-4">30</div>
+            <div class="w-30 bg-blue-200 p-4">30</div>
+        </div>
+
+        <p class="mt-6">Flex justify-between gap-2</p>
+        <div class="flex justify-between gap-2">
+            <div class="w-30 bg-blue-100 p-4">30</div>
+            <div class="w-30 bg-blue-200 p-4">30</div>
+        </div>
+
+        <p class="mt-6">Flex justify-around gap-2</p>
+        <div class="flex justify-around gap-2">
+            <div class="w-30 bg-blue-100 p-4">30</div>
+            <div class="w-30 bg-blue-200 p-4">30</div>
+        </div>
+
+        <p class="mt-6">Flex items-start gap-2</p>
+        <div class="flex items-start gap-2">
+            <div class="w-30 bg-blue-100 p-4">4</div>
+            <div class="w-30 bg-blue-200 p-8">8</div>
+            <div class="w-30 bg-blue-200 p-12">12</div>
+        </div>
+
+        <p class="mt-6">Flex items-center gap-2</p>
+        <div class="flex items-center gap-2">
+            <div class="w-30 bg-blue-100 p-4">4</div>
+            <div class="w-30 bg-blue-200 p-8">8</div>
+            <div class="w-30 bg-blue-200 p-12">12</div>
+        </div>
+
+        <p class="mt-6">Flex items-end gap-2</p>
+        <div class="flex items-end gap-2">
+            <div class="w-30 bg-blue-100 p-4">4</div>
+            <div class="w-30 bg-blue-200 p-8">8</div>
+            <div class="w-30 bg-blue-200 p-12">12</div>
+        </div>
+
+        <p class="mt-6">Flex items-stretch gap-2</p>
+        <div class="flex items-stretch gap-2">
+            <div class="w-30 bg-amber-100 p-4">4</div>
+            <div class="w-30 bg-amber-200 p-8">8</div>
+            <div class="w-30 bg-amber-200 p-12">12</div>
+        </div>
+
+
+        <!-- Grid -->
+        <h1 class="text-left text-4xl my-6 font-bold">Grid</h1>
+
+        <p class="mt-6">Grid grid-cols-3 gap-2</p>
+        <div class="grid grid-cols-3 gap-2">
+            <div class="bg-blue-100 p-4">1</div>
+            <div class="bg-blue-200 p-4">2</div>
+            <div class="bg-blue-100 p-4">3</div>
+            <div class="bg-blue-200 p-4">4</div>
+            <div class="bg-blue-100 p-4">5</div>
+            <div class="bg-blue-200 p-4">6</div>
+        </div>
+
+        <p class="mt-6">Grid grid-cols-3 gap-2 col-span-2</p>
+        <div class="grid grid-cols-3 gap-2">
+            <div class="bg-blue-100 p-4">1</div>
+            <div class="bg-blue-200 p-4">2</div>
+            <div class="bg-blue-100 p-4">3</div>
+            <div class="col-span-2 bg-blue-200 p-4">4</div>
+            <div class="bg-blue-100 p-4">5</div>
+        </div>
+
+        <p class="mt-6">Grid grid-rows-2 grid-flow-col gap-2 col-span-2 row-span-2</p>
+        <div class="grid grid-rows-2 grid-flow-col gap-2">
+            <div class="bg-blue-100 p-4">1</div>
+            <div class="bg-blue-200 p-4">2</div>
+            <div class="bg-blue-100 p-4">3</div>
+            <div class="col-span-2 bg-blue-200 p-4">4</div>
+            <div class="row-span-2 bg-blue-100 p-4">5</div>
+        </div>
+
+        <p class="mt-6">Grid grid-cols-3 justify-items-start</p>
+        <div class="grid grid-cols-3 justify-items-start">
+            <div class="bg-blue-100 mt-1 p-4">1</div>
+            <div class="bg-blue-200 mt-1 p-4">2</div>
+            <div class="bg-blue-100 mt-1 p-4">3</div>
+            <div class="bg-blue-200 mt-1 p-4">4</div>
+            <div class="bg-blue-100 mt-1 p-4">5</div>
+            <div class="bg-blue-200 mt-1 p-4">6</div>
+        </div>
+
+        <p class="mt-6">Grid grid-cols-3 justify-items-center</p>
+        <div class="grid grid-cols-3 justify-items-center">
+            <div class="bg-blue-100 m-1 p-4">1</div>
+            <div class="bg-blue-200 m-1 p-4">2</div>
+            <div class="bg-blue-100 m-1 p-4">3</div>
+            <div class="bg-blue-200 m-1 p-4">4</div>
+            <div class="bg-blue-100 m-1 p-4">5</div>
+            <div class="bg-blue-200 m-1 p-4">6</div>
+        </div>
+
+        <p class="mt-6">Grid grid-cols-3 justify-items-end</p>
+        <div class="grid grid-cols-3 justify-items-end">
+            <div class="bg-blue-100 mt-1 p-4">1</div>
+            <div class="bg-blue-200 mt-1 p-4">2</div>
+            <div class="bg-blue-100 mt-1 p-4">3</div>
+            <div class="bg-blue-200 mt-1 p-4">4</div>
+            <div class="bg-blue-100 mt-1 p-4">5</div>
+            <div class="bg-blue-200 mt-1 p-4">6</div>
+        </div>
+
+        <p class="mt-6">Grid grid-cols-3 content-center</p>
+        <div class="grid grid-cols-3 content-center bg-slate-700 gap-2 mb-2">
+            <div class="w-30 bg-blue-200 p-4">30</div>
+            <div class="w-30 bg-blue-300 p-4">30</div>
+            <div class="w-30 bg-blue-200 p-4">30</div>
+        </div>
+
+    </main>
+</body>
+</html>

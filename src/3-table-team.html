@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind Site</title>
+</head>
+<body class="container flex">
+    <main class="p-5">
+        <!-- Table -->
+        <h1 class="text-left text-4xl my-6 font-bold">Table</h1>
+
+        <p class="text-2xl font-medium text-gray-800 py-2">Summary</p>
+        <div class="table-none md:table-fixed">
+            <table class="border border-gray-200 w-full">
+                <thead class="text-[14px]">
+                    <tr class="border border-gray-200">
+                        <th class="w-[50px] border border-gray-200 pinned-column" scope="col"></th>
+                        <th class="w-[160px] p-2 text-start border border-gray-200 last-left-pinned-column" scope="col">Team</th>
+                        <th class="w-[90px] p-2 text-start border-bottom border-gray-200" scope="col">Season</th>
+                        <th class="w-[50px]" scope="col">GP</th>
+                        <th class="w-[50px]" scope="col">W</th>
+                        <th class="w-[50px]" scope="col">L</th>
+                        <th class="w-[50px]" scope="col">T</th>
+                        <th class="w-[50px]" scope="col">P</th>
+                        <th class="w-[50px]" scope="col">P%</th>
+                        <th class="w-[50px]" scope="col">RW</th>
+                        <th class="w-[60px]" scope="col">Net PP%</th>
+                        <th class="w-[70px]" scope="col">Shots/GP</th>
+                        <th class="w-[70px]" scope="col">SA/GP</th>
+                        <th class="w-[70px]" scope="col">FOW%</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm font-medium text-gray-600">
+                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                        <td class="w-[50px] p-2 text-center whitespace-nowrap pinned-column border border-gray-200" role="cell">1</td>
+                        <td class="w-[160px] p-2 text-start whitespace-nowrap last-left-pinned-column border border-gray-200" role="cell">Toronto Maple Leafs</td>
+                        <td class="w-[90px] p-2 text-start" role="cell">2024-25</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">3</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">3</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">0</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">--</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">6</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">1.00</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                        <td class="w-[60px] p-2 text-center" role="cell">55.6</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">21.7</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">27.0</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">57.2</td>
+                    </tr>
+                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                        <td class="w-[50px] p-2 text-center whitespace-nowrap pinned-column border border-gray-200" role="cell">2</td>
+                        <td class="w-[160px] p-2 text-start whitespace-nowrap last-left-pinned-column border border-gray-200" role="cell">Carolina Hurricanes</td>
+                        <td class="w-[90px] p-2 text-start" role="cell">2024-25</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">3</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">2</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">--</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">4</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">.667</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">2</td>
+                        <td class="w-[60px] p-2 text-center" role="cell">30.0</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">33.3</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">29.0</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">44.0</td>
+                    </tr>
+                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                        <td class="w-[50px] p-2 text-center whitespace-nowrap pinned-column border border-gray-200" role="cell">3</td>
+                        <td class="w-[160px] p-2 text-start whitespace-nowrap last-left-pinned-column border border-gray-200" role="cell">Florida Panthers</td>
+                        <td class="w-[90px] p-2 text-start" role="cell">2024-25</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">2</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">2</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">0</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">--</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">4</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">1.00</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">2</td>
+                        <td class="w-[60px] p-2 text-center" role="cell">50.0</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">20.0</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">20.5</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">54.5</td>
+                    </tr>
+                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                        <td class="w-[50px] p-2 text-center whitespace-nowrap pinned-column border border-gray-200" role="cell">4</td>
+                        <td class="w-[160px] p-2 text-start whitespace-nowrap last-left-pinned-column border border-gray-200" role="cell">Washington Capitals</td>
+                        <td class="w-[90px] p-2 text-start" role="cell">2024-25</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">3</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">2</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">--</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">4</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">.667</td>
+                        <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                        <td class="w-[60px] p-2 text-center" role="cell">20.0</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">28.3</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">33.7</td>
+                        <td class="w-[70px] p-2 text-center" role="cell">47.5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</body>
+</html>
