@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind Site</title>
+</head>
+<body class="container flex">
+    <main class="p-5">
+        <!-- Cards -->
+        <h1 class="text-left text-4xl my-6 font-bold">Cards</h1>
+
+        <p class="text-2xl font-medium text-gray-800 py-2">Standings</p>
+        <div class="table-none md:table-fixed">
+            <table class="border border-gray-200 w-full">
+                <thead class="text-[14px]">
+                    <tr class="border border-gray-200">
+                        <th class="w-[50px] border border-gray-200" scope="col">Rank</th>
+                        <th class="w-[240px] p-2 text-start border border-gray-200" scope="col">Team</th>
+                        <th class="w-[50px]" scope="col">GP</th>
+                        <th class="w-[50px]" scope="col">W</th>
+                        <th class="w-[50px]" scope="col">L</th>
+                        <th class="w-[50px]" scope="col">OT</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                        <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">1</td>
+                        <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                            <div class="flex items-center">
+                                <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Auston Matthews">
+                                <div class="text-sm font-medium dark:text-white">Toronto Maple Leafs</div>
+                            </div>
+                        </td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">82</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">52</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">26</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">4</td>
+                    </tr>
+                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                        <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">2</td>
+                        <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                            <div class="flex items-center">
+                                <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Auston Matthews">
+                                <div class="text-sm font-medium dark:text-white">Montreal Canadians</div>
+                            </div>
+                        </td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">82</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">48</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">24</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">2</td>
+                    </tr>
+                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                        <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">3</td>
+                        <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                            <div class="flex items-center">
+                                <img class="h-6 rounded-full" src="./img/FLA_light.svg" alt="Auston Matthews">
+                                <div class="text-sm font-medium dark:text-white">Florida Panthers</div>
+                            </div>
+                        </td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">80</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">46</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">24</td>
+                        <td class="w-[50px] p-2 text-center text-sm" role="cell">2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+</body>
+</html>
