@@ -13,62 +13,301 @@
         <!-- Cards -->
         <h1 class="text-left text-4xl my-6 font-bold">Cards</h1>
 
-        <p class="text-2xl font-medium text-gray-800 py-2">Standings</p>
-        <div class="table-none md:table-fixed">
-            <table class="border border-gray-200 w-full">
-                <thead class="text-[14px]">
-                    <tr class="border border-gray-200">
-                        <th class="w-[50px] border border-gray-200" scope="col">Rank</th>
-                        <th class="w-[240px] p-2 text-start border border-gray-200" scope="col">Team</th>
-                        <th class="w-[50px]" scope="col">GP</th>
-                        <th class="w-[50px]" scope="col">W</th>
-                        <th class="w-[50px]" scope="col">L</th>
-                        <th class="w-[50px]" scope="col">OT</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
-                        <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">1</td>
-                        <td class="w-[240px] p-1 gray-200 border border-gray-200">
-                            <div class="flex items-center">
-                                <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Auston Matthews">
-                                <div class="text-sm font-medium dark:text-white">Toronto Maple Leafs</div>
-                            </div>
-                        </td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">82</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">52</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">26</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">4</td>
-                    </tr>
-                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
-                        <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">2</td>
-                        <td class="w-[240px] p-1 gray-200 border border-gray-200">
-                            <div class="flex items-center">
-                                <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Auston Matthews">
-                                <div class="text-sm font-medium dark:text-white">Montreal Canadians</div>
-                            </div>
-                        </td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">82</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">48</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">24</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">2</td>
-                    </tr>
-                    <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
-                        <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">3</td>
-                        <td class="w-[240px] p-1 gray-200 border border-gray-200">
-                            <div class="flex items-center">
-                                <img class="h-6 rounded-full" src="./img/FLA_light.svg" alt="Auston Matthews">
-                                <div class="text-sm font-medium dark:text-white">Florida Panthers</div>
-                            </div>
-                        </td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">80</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">46</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">24</td>
-                        <td class="w-[50px] p-2 text-center text-sm" role="cell">2</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <p class="text-2xl font-medium text-gray-800 py-2">Team Standings</p>
+        <section class="flex space-x-4">
+            <div class="table-none md:table-fixed">
+                <table class="border border-gray-200 w-full">
+                    <thead class="text-[14px]">
+                        <tr class="border border-gray-200">
+                            <th class="w-[50px] border border-gray-200" scope="col">Rank</th>
+                            <th class="w-[240px] p-2 text-start border border-gray-200" scope="col">Team</th>
+                            <th class="w-[50px]" scope="col">GP</th>
+                            <th class="w-[50px]" scope="col">W</th>
+                            <th class="w-[50px]" scope="col">L</th>
+                            <th class="w-[50px]" scope="col">OT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                            <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">1</td>
+                            <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                                <div class="flex items-center">
+                                    <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Auston Matthews">
+                                    <div class="mx-2 text-sm font-medium dark:text-white">Toronto Maple Leafs</div>
+                                </div>
+                            </td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">82</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">52</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">26</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">4</td>
+                        </tr>
+                        <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                            <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">2</td>
+                            <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                                <div class="flex items-center">
+                                    <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="??">
+                                    <div class="mx-2 text-sm font-medium dark:text-white">Montreal Canadians</div>
+                                </div>
+                            </td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">82</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">48</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">24</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">2</td>
+                        </tr>
+                        <tr class="even:bg-white odd:bg-gray-100 border border-gray-200">
+                            <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">3</td>
+                            <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                                <div class="flex items-center">
+                                    <img class="h-6 rounded-full" src="./img/FLA_light.svg" alt="??">
+                                    <div class="mx-2 text-sm font-medium dark:text-white">Florida Panthers</div>
+                                </div>
+                            </td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">80</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">46</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">24</td>
+                            <td class="w-[50px] p-2 text-center text-sm" role="cell">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <p class="text-2xl font-medium text-gray-800 py-2 mt-10">Player Standings</p>
+        <section class="flex space-x-4">
+            <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-2 py-3 text-center">Rank</th>
+                            <th scope="col" class="px-2 py-3">Team</th>
+                            <th scope="col" class="px-2 py-3">Player</th>
+                            <th scope="col" class="px-4 py-3">GP</th>
+                            <th scope="col" class="px-4 py-3">W</th>
+                            <th scope="col" class="px-4 py-3">L</th>
+                            <th scope="col" class="px-4 py-3">OT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="px-2 py-2 text-center">1</td>
+                            <td class="px-2">
+                                <a href="#">
+                                    <img src="./img/TOR_light.svg" class="h-6 max-w-full max-h-full" alt="Toronto Maple Leafs">
+                                </a>
+                            </td>
+                            <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Auston Matthews</a>
+                            </td>
+                            <td class="px-4 py-2">82</td>
+                            <td class="px-4 py-2">52</td>
+                            <td class="px-4 py-2">26</td>
+                            <td class="px-4 py-2">4</td>
+                        </tr>
+
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="px-2 py-2 text-center">2</td>
+                            <td class="px-2">
+                                <a href="#">
+                                    <img src="./img/MTL_light.svg" class="h-6 max-w-full max-h-full" alt="Montreal Canadians">
+                                </a>
+                            </td>
+                            <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Josh Anderson</a>
+                            </td>
+                            <td class="px-4 py-2">82</td>
+                            <td class="px-4 py-2">48</td>
+                            <td class="px-4 py-2">24</td>
+                            <td class="px-4 py-2">2</td>
+                        </tr>
+
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="px-2 py-2 text-center">3</td>
+                            <td class="px-2">
+                                <a href="#">
+                                    <img src="./img/FLA_light.svg" class="h-6 max-w-full max-h-full" alt="Montreal Canadians">
+                                </a>
+                            </td>
+                            <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Matthew Tkachuk</a>
+                            </td>
+                            <td class="px-4 py-2">80</td>
+                            <td class="px-4 py-2">46</td>
+                            <td class="px-4 py-2">24</td>
+                            <td class="px-4 py-2">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <p class="text-2xl font-medium text-gray-800 py-2 mt-10">Points, Goals, Assists</p>
+        <section>
+            <div class="flex gap-6">
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-sm text-white uppercase bg-gray-800 bg-gradient-to-r from-60% to-gray-600">
+                            <tr>
+                                <th scope="col" class="px-4 py-3" colspan="5">Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">1</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/TOR_light.svg" class="h-6 max-w-full max-h-full" alt="Toronto Maple Leafs">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Auston Matthews</a>
+                                </td>
+                                <td class="px-4 py-2">82</td>
+                                <td class="px-4 py-2">2</td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">2</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/MTL_light.svg" class="h-6 max-w-full max-h-full" alt="Montreal Canadians">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Josh Anderson</a>
+                                </td>
+                                <td class="px-4 py-2">82</td>
+                                <td class="px-4 py-2">0</td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">3</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/FLA_light.svg" class="h-6 max-w-full max-h-full" alt="Montreal Canadians">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Matthew Tkachuk</a>
+                                </td>
+                                <td class="px-4 py-2">80</td>
+                                <td class="px-4 py-2">1</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-sm text-white uppercase bg-gray-800 bg-gradient-to-r from-60% to-gray-600">
+                            <tr>
+                                <th scope="col" class="px-4 py-3" colspan="5">Goals</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">1</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/TOR_light.svg" class="h-6 max-w-full max-h-full" alt="Toronto Maple Leafs">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Auston Matthews</a>
+                                </td>
+                                <td class="px-4 py-2">82</td>
+                                <td class="px-4 py-2">2</td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">2</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/MTL_light.svg" class="h-6 max-w-full max-h-full" alt="Montreal Canadians">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Josh Anderson</a>
+                                </td>
+                                <td class="px-4 py-2">82</td>
+                                <td class="px-4 py-2">0</td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">3</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/FLA_light.svg" class="h-6 max-w-full max-h-full" alt="Montreal Canadians">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Matthew Tkachuk</a>
+                                </td>
+                                <td class="px-4 py-2">80</td>
+                                <td class="px-4 py-2">1</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <thead class="text-sm text-white uppercase bg-gray-800 bg-gradient-to-r from-60% to-gray-600">
+                            <tr>
+                                <th scope="col" class="px-4 py-3" colspan="5">Assists</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">1</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/TOR_light.svg" class="h-6 max-w-full max-h-full" alt="Toronto Maple Leafs">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Auston Matthews</a>
+                                </td>
+                                <td class="px-4 py-2">82</td>
+                                <td class="px-4 py-2">2</td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">2</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/MTL_light.svg" class="h-6 max-w-full max-h-full" alt="Montreal Canadians">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Josh Anderson</a>
+                                </td>
+                                <td class="px-4 py-2">82</td>
+                                <td class="px-4 py-2">0</td>
+                            </tr>
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                                <td class="px-2 py-2 text-center">3</td>
+                                <td class="px-2">
+                                    <a href="#">
+                                        <img src="./img/FLA_light.svg" class="h-6 max-w-full max-h-full" alt="Montreal Canadians">
+                                    </a>
+                                </td>
+                                <td class="px-2 py-2 font-semibold text-gray-900 dark:text-white">
+                                    <a href="#" class="font-medium text-gray-600 dark:text-gray-500 hover:underline">Matthew Tkachuk</a>
+                                </td>
+                                <td class="px-4 py-2">80</td>
+                                <td class="px-4 py-2">1</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
     </main>
 </body>
