@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind - Scroll Blocks</title>
+</head>
+<body>
+    <main>
+
+        <!-- <p class="text-2xl font-medium text-gray-800 py-2 my-10">Scrolling Content</p>
+        <section class="flex flex-col bg-white m-auto p-auto">
+            <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+                <div class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10">
+                    <div class="inline-block">
+                        <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">A1</div>
+                    </div>
+                    <div class="inline-block px-3">
+                        <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">A2</div>
+                    </div>
+                    <div class="inline-block px-3">
+                        <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">A3</div>
+                    </div>
+                    <div class="inline-block px-3">
+                        <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">A4</div>
+                    </div>
+                    <div class="inline-block px-3">
+                        <div class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out">A5</div>
+                    </div>
+                </div>
+            </div
+        </section> -->
+
+        <p class="text-2xl font-medium text-gray-800 py-2 my-10">Scrolling DIV</p>
+        <section class="flex flex-nowrap overflow-x-auto gap-5 px-5 pb-5 snap-x snap-mandatory no-scroll-bar">
+            <div class="bg-blue-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 1</div>
+            <div class="bg-green-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 2</div>
+            <div class="bg-yellow-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 3</div>
+            <div class="bg-orange-400 p-5 rounded flex-none w-64 shadow-md snap-always snap-center">Block 4</div>
+            <div class="bg-red-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 5</div>
+        </section>
+
+        <p class="text-2xl font-medium text-gray-800 py-2 my-10">Scrolling LI</p>
+        <!-- <ul class="flex flex-nowrap overflow-x-auto gap-4 px-4 pb-4 snap-x snap-mandatory no-scroll-bar"> -->
+        <ul class="flex flex-nowrap overflow-x-auto gap-4 px-4 pb-4 snap-x snap-mandatory">
+            <li class="rounded-lg overflow-hidden flex-none w-86 shadow-lg snap-always snap-center">
+                <div class="flex flex-col items-center">
+                    <div id="player-info-1" class="w-full text-lg text-white bg-gray-800 px-4 py-2">
+                        Points
+                    </div>
+                    <div id="player-info-1" class="flex justify-between gap-4">
+                        <div class="p-2">
+                            <img class="h-30 rounded-full ring-2 ring-gray-300" src="./img/8479318.png" alt="Auston Matthews">
+                        </div>
+                        <div class="grid grid-cols-2 gap-x-4 p-2">
+                            <div class="text-lg font-bold">82</div>
+                            <div class="text-lg font-bold">2</div>
+                            <div class="font-medium">P</div>
+                            <div class="font-medium">PPG</div>
+                            <div class="text-lg font-Bold">2</div>
+                            <div class="text-lg font-bold">1</div>
+                            <div class="font-medium">G</div>
+                            <div class="font-medium">A</div>
+                        </div>
+                    </div>
+                    <div id="player-points" lass="w-full">
+                        <table class="w-full text-sm font-medium text-left text-gray-500 dark:text-gray-400">
+                            <tbody>
+                                <tr class="even:bg-white odd:bg-gray-100 border-gray-200 hover:bg-gray-200">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">1</td>
+                                    <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Player Name 1">
+                                            <div class="mx-2">Player Name 1</div>
+                                        </div>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">82</td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">2</td>
+                                    </td>
+                                </tr>
+                                <tr class="even:bg-white odd:bg-gray-100 border-gray-200 hover:bg-gray-200">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">2</td>
+                                    <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Player Name 2">
+                                            <div class="mx-2">Player Name 2</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">80</td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">1</td>
+                                </tr>
+                                <tr class="even:bg-white odd:bg-gray-100 border-gray-200 hover:bg-gray-200">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">3</td>
+                                    <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/FLA_light.svg" alt="Player Name 3">
+                                            <div class="mx-2">Player Name 3</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">74</td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">1</td>
+                                </tr>
+                                <tr class="even:bg-white odd:bg-gray-100 border-gray-200 hover:bg-gray-200">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">3</td>
+                                    <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Player Name 4">
+                                            <div class="mx-2">Player Name 4</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">72</td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">1</td>
+                                </tr>
+                                <tr class="even:bg-white odd:bg-gray-100 border-gray-200 hover:bg-gray-200">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap border border-gray-200" role="cell">3</td>
+                                    <td class="w-[240px] p-1 gray-200 border border-gray-200">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Player Name 5">
+                                            <div class="mx-2">Player Name 5</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">68</td>
+                                    <td class="w-[50px] p-2 text-center border-t border-gray-200" role="cell">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            
+            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-lg snap-always snap-center">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-sm text-white bg-gray-800">
+                        <tr>
+                            <th scope="col" class="px-4 py-3" colspan="5">Goals</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="px-2 py-2 text-center">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+
+            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-lg snap-always snap-center">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-sm text-white bg-gray-800">
+                        <tr>
+                            <th scope="col" class="px-4 py-3" colspan="5">Assists</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="px-2 py-2 text-center">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+
+            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-md snap-always snap-center">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-sm text-white bg-gray-800">
+                        <tr>
+                            <th scope="col" class="px-4 py-3" colspan="5">SV%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="px-2 py-2 text-center">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+
+            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-lg snap-always snap-center">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-sm text-white bg-gray-800">
+                        <tr>
+                            <th scope="col" class="px-4 py-3" colspan="5">XSV%</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="px-2 py-2 text-center">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+
+            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-lg snap-always snap-center">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-sm text-white bg-gray-800">
+                        <tr>
+                            <th scope="col" class="px-4 py-3" colspan="5">GAA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <td class="px-2 py-2 text-center">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+
+    </main>
+</body>
+</html>
