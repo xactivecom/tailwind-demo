@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tailwind - Scroll Blocks</title>
+</head>
+<body>
+    <main>
+
+        <p class="text-2xl font-medium text-gray-800 py-2 my-10">Scrolling DIV</p>
+        <section class="flex flex-nowrap overflow-x-auto gap-5 px-5 pb-5 snap-x snap-mandatory no-scroll-bar">
+            <div class="bg-blue-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 1</div>
+            <div class="bg-green-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 2</div>
+            <div class="bg-yellow-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 3</div>
+            <div class="bg-orange-400 p-5 rounded flex-none w-64 shadow-md snap-always snap-center">Block 4</div>
+            <div class="bg-red-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 5</div>
+        </section>
+
+    </main>
+</body>
+</html>

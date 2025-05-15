@@ -11,46 +11,182 @@
 <body>
     <main>
 
-        <p class="text-2xl font-medium text-gray-800 py-2 my-10">Scrolling DIV</p>
-        <section class="flex flex-nowrap overflow-x-auto gap-5 px-5 pb-5 snap-x snap-mandatory no-scroll-bar">
-            <div class="bg-blue-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 1</div>
-            <div class="bg-green-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 2</div>
-            <div class="bg-yellow-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 3</div>
-            <div class="bg-orange-400 p-5 rounded flex-none w-64 shadow-md snap-always snap-center">Block 4</div>
-            <div class="bg-red-400 p-5 rounded flex-none w-64 shadow-lg snap-always snap-center">Block 5</div>
-        </section>
-
-        <p class="text-2xl font-medium text-gray-800 py-2 my-10">Scrolling LI</p>
+        <p class="text-2xl font-medium text-gray-800 p-4">Scrolling Demo</p>
         <ul class="flex flex-nowrap overflow-x-auto gap-8 px-4 pb-4 snap-x snap-mandatory no-scroll-bar">
+            <li class="rounded-2xl overflow-hidden flex-none w-86 shadow-lg snap-always snap-center">
+                <!-- player card -->
+                <div class="flex flex-col bg-white">
+                    <div class="w-full text-white text-lg bg-gray-800 px-4 py-2 border-b border-gray-300">
+                        Points
+                    </div>
+                    <div id="points_info" class="grid grid-flow-col gap-x-2 bg-[#00205B]">
+                        <div class="w-34 pl-4 py-2">
+                            <img id="points_mug" class="h-30 mt-1 rounded-full bg-white" src="./img/8479318.png" alt="Auston Matthews">
+                        </div>
+                        <div class="w-12 text-center pt-6 pr-6 text-white border-r border-gray-50">
+                            <p id="points_team" >TOR</p>
+                            <p id="points_jersey">#14</p>
+                            <p id="points_shoots">L</p>
+                            <p id="points_pos">C</p>
+                        </div>
+                        <div class="w-28 grid grid-cols-2 gap-x-4 py-2 text-center text-white">
+                            <div class="h-1 text-sm text-gray-100">P</div>
+                            <div class="h-1 text-sm text-gray-100">PPG</div>
+                            <div id="points_p" class="text-2xl font-bold">82</div>
+                            <div id="points_ppg" class="text-2xl font-bold">2</div>
+                            <div class="h-1 text-sm text-gray-100">G</div>
+                            <div class="h-1 text-sm text-gray-100">A</div>
+                            <div id="points_g" class="text-xl font-bold">2</div>
+                            <div id="points_a" class="text-xl font-bold">1</div>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <table id="points_tbl" class="w-full text-sm font-medium text-left border-t border-gray-300">
+                            <tbody>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">1</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Auston Matthews">
+                                            <div class="mx-2">Auston Matthews</div>
+                                        </div>
+                                    <td class="w-[50px] p-2 text-center" role="cell">82</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">2</td>
+                                    </td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">2</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Josh Anderson">
+                                            <div class="mx-2">Josh Anderson</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">80</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">T3</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/FLA_light.svg" alt="Matthew Tkachuk">
+                                            <div class="mx-2">Matthew Tkachuk</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">74</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">T3</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Mitch Marner">
+                                            <div class="mx-2">Mitch Marner</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">74</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">4</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Mike Matheson">
+                                            <div class="mx-2">Mike Matheson</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">68</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">1</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Auston Matthews">
+                                            <div class="mx-2">Auston Matthews</div>
+                                        </div>
+                                    <td class="w-[50px] p-2 text-center" role="cell">82</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">2</td>
+                                    </td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">2</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Josh Anderson">
+                                            <div class="mx-2">Josh Anderson</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">80</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">T3</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/FLA_light.svg" alt="Matthew Tkachuk">
+                                            <div class="mx-2">Matthew Tkachuk</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">74</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">T3</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Mitch Marner">
+                                            <div class="mx-2">Mitch Marner</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">74</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                                </tr>
+                                <tr class="border-gray-200 hover:bg-blue-500 hover:text-white border-t border-dark-100">
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">4</td>
+                                    <td class="w-[240px] p-1 gray-200" role="cell">
+                                        <div class="flex items-center">
+                                            <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Mike Matheson">
+                                            <div class="mx-2">Mike Matheson</div>
+                                        </div>
+                                    </td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">68</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            
             <li class="rounded-lg overflow-hidden flex-none w-86 shadow-lg snap-always snap-center">
-
                 <!-- player card -->
                 <div class="flex flex-col items-center bg-white">
-                    <div id="player-info-1" class="w-full text-white text-lg bg-gray-800 px-4 py-2">
-                        Points
+                    <div class="w-full text-white text-lg bg-gray-800 px-4 py-2">
+                        Goals
                     </div>
                     <div class="flex w-full justify-between gap-8 px-2">
                         <div class="flex nowrap p-2">
-                            <img id="player-mug" class="h-30 mt-1 rounded-full ring-3 ring-[#00205B]" src="./img/8479318.png" alt="Auston Matthews">
-                            <div class="px-4 py-4 text-right text-gray-500">
-                                <p id="player-team" >TOR</p>
-                                <p id="player-jersey">#14</p>
-                                <p id="player-shoots">L</p>
-                                <p id="player-pos">C</p>
+                            <img id="goals_mug" class="h-30 mt-1 rounded-full ring-3 ring-[#00205B]" src="./img/8479318.png" alt="Auston Matthews">
+                            <div class="px-4 py-4 text-right text-gray-500 border-r border-gray-300">
+                                <p id="goals_team" >TOR</p>
+                                <p id="goals_jersey">#14</p>
+                                <p id="goals_shoots">L</p>
+                                <p id="goals_pos">C</p>
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-x-6 p-2">
-                            <div id="player-p" class="text-2xl text-right font-bold">82</div>
-                            <div id="player-ppg" class="text-2xl text-right font-bold">2</div>
-                            <div class="text-sm text-right text-gray-500">P</div>
-                            <div class="text-sm text-right text-gray-500">PPG</div>
-                            <div id="player-g" class="text-xl text-right font-bold pt-2">2</div>
-                            <div id="player-a" class="text-xl text-right font-bold pt-2">1</div>
+                            <div id="goals_p" class="text-2xl text-right font-bold">82</div>
+                            <div id="goals_ppg" class="text-2xl text-right font-bold">2</div>
                             <div class="text-sm text-right text-gray-500">G</div>
-                            <div class="text-sm text-right text-gray-500">A</div>
+                            <div class="text-sm text-right text-gray-500">GPG</div>
+                            <div id="goals_g" class="text-xl text-right font-bold pt-2">2</div>
+                            <div id="goals_a" class="text-xl text-right font-bold pt-2">1</div>
+                            <div class="text-sm text-right text-gray-500">XG</div>
+                            <div class="text-sm text-right text-gray-500">XGT</div>
                         </div>
                     </div>
-                    <div id="player-points" class="w-full">
+                    <div class="w-full">
                         <table class="w-full text-sm font-medium text-left border-t border-gray-300">
                             <tbody>
                                 <tr class="border-gray-200 hover:bg-blue-500 hover:text-white">
@@ -76,7 +212,7 @@
                                     <td class="w-[50px] p-2 text-center" role="cell">1</td>
                                 </tr>
                                 <tr class="border-gray-200 hover:bg-blue-500 hover:text-white">
-                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">3</td>
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">T3</td>
                                     <td class="w-[240px] p-1 gray-200" role="cell">
                                         <div class="flex items-center">
                                             <img class="h-6 rounded-full" src="./img/FLA_light.svg" alt="Player Name 3">
@@ -87,18 +223,18 @@
                                     <td class="w-[50px] p-2 text-center" role="cell">1</td>
                                 </tr>
                                 <tr class="border-gray-200 hover:bg-blue-500 hover:text-white">
-                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">4</td>
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">T3</td>
                                     <td class="w-[240px] p-1 gray-200" role="cell">
                                         <div class="flex items-center">
                                             <img class="h-6 rounded-full" src="./img/TOR_light.svg" alt="Player Name 4">
                                             <div class="mx-2">Player Name 4</div>
                                         </div>
                                     </td>
-                                    <td class="w-[50px] p-2 text-center" role="cell">72</td>
+                                    <td class="w-[50px] p-2 text-center" role="cell">74</td>
                                     <td class="w-[50px] p-2 text-center" role="cell">1</td>
                                 </tr>
                                 <tr class="border-gray-200 hover:bg-blue-500 hover:text-white">
-                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">5</td>
+                                    <td class="w-[50px] p-2 text-center text-sm whitespace-nowrap" role="cell">4</td>
                                     <td class="w-[240px] p-1 gray-200" role="cell">
                                         <div class="flex items-center">
                                             <img class="h-6 rounded-full" src="./img/MTL_light.svg" alt="Player Name 5">
@@ -111,25 +247,9 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
-            </li>
-            
-            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-lg snap-always snap-center">
-                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                    <thead class="text-sm text-white bg-gray-800">
-                        <tr>
-                            <th scope="col" class="px-4 py-3" colspan="5">Goals</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
-                            <td class="px-2 py-2 text-center">TODO</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </li>
+                </div>            </li>
 
-            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-lg snap-always snap-center">
+            <li class="rounded-lg overflow-hidden flex-none w-86 shadow-lg snap-always snap-center">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-sm text-white bg-gray-800">
                         <tr>
@@ -144,7 +264,7 @@
                 </table>
             </li>
 
-            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-md snap-always snap-center">
+            <li class="rounded-lg overflow-hidden flex-none w-86 shadow-lg snap-always snap-center">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-sm text-white bg-gray-800">
                         <tr>
@@ -159,7 +279,7 @@
                 </table>
             </li>
 
-            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-lg snap-always snap-center">
+            <li class="rounded-lg overflow-hidden flex-none w-86 shadow-lg snap-always snap-center">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-sm text-white bg-gray-800">
                         <tr>
@@ -174,7 +294,7 @@
                 </table>
             </li>
 
-            <li class="rounded-lg overflow-hidden flex-none w-64 shadow-lg snap-always snap-center">
+            <li class="rounded-lg overflow-hidden flex-none w-86 shadow-lg snap-always snap-center">
                 <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
                     <thead class="text-sm text-white bg-gray-800">
                         <tr>
@@ -191,5 +311,63 @@
         </ul>
 
     </main>
+
+    <script type="text/javascript">
+        // Static collections
+        const all_points_colors = ["#00205B", "#A6192E", "#C8102E", "#00205B", "#A6192E", "#00205B", "#A6192E", "#C8102E", "#00205B", "#A6192E"];
+        const all_points_mugs = ["./img/8479318.png", "./img/8476981.png", "./img/8479314.png", "./img/8478483.png", "./img/8476875.png", "./img/8479318.png", "./img/8476981.png", "./img/8479314.png", "./img/8478483.png", "./img/8476875.png"];
+        const all_points_info = [["TOR", "#34", "L", "C"], ["MTL", "#17", "R", "RW"], ["FLA", "#19", "L", "LW"], ["TOR", "#16", "R", "RW"], ["MTL", "#8", "L", "D"], ["TOR", "#34", "L", "C"], ["MTL", "#17", "R", "RW"], ["FLA", "#19", "L", "LW"], ["TOR", "#16", "R", "RW"], ["MTL", "#8", "L", "D"]];
+        const all_points_stats = [[82, 12, 1, 0], [80, 1, 1, 0], [74, 1, 1, 0], [74, 1, 1, 0], [68, 0, 0, 0], [82, 2, 1, 0], [80, 1, 1, 0], [74, 1, 1, 0], [74, 1, 1, 0], [68, 0, 0, 0]];
+
+        // Dynamic elements
+        const points_info = document.getElementById("points_info");
+        const points_mug = document.getElementById("points_mug");
+
+        const points_team = document.getElementById("points_team");
+        const points_jersey = document.getElementById("points_jersey");
+        const points_shoots = document.getElementById("points_shoots");
+        const points_pos = document.getElementById("points_pos");
+
+        const points_p = document.getElementById("points_p");
+        const points_ppg = document.getElementById("points_ppg");
+        const points_g = document.getElementById("points_g");
+        const points_a = document.getElementById("points_a");
+
+        // Update points values
+        function update_points_tbl(idx) {
+            console.log("update_points_tbl " + idx)
+            points_info.style.backgroundColor = all_points_colors[idx];
+            points_mug.src = all_points_mugs[idx]
+            //points_mug.style.backgroundColor = all_points_colors[idx];
+
+            points_team.innerHTML = all_points_info[idx][0];
+            points_jersey.innerHTML = all_points_info[idx][1];
+            points_shoots.innerHTML = all_points_info[idx][2];
+            points_pos.innerHTML = all_points_info[idx][3];
+
+            points_p.innerHTML = all_points_stats[idx][0];
+            points_ppg.innerHTML = all_points_stats[idx][1];
+            points_g.innerHTML = all_points_stats[idx][2];
+            points_a.innerHTML = all_points_stats[idx][3];
+        }
+
+        // Initialization
+        update_points_tbl(0);
+
+        const points_tbl = document.getElementById("points_tbl");
+        points_tbl.addEventListener("mouseover", e => {
+            const row = e.target.closest("tr");
+            //console.log(row)
+
+            // Ignore events from table header
+            //if (!row || row.parentNode.tagName === 'THEAD') return;
+
+            // row.classList.remove("class-name")
+            //idx = row.getAttribute("data-row-idx");
+            idx = row.rowIndex
+            console.log(idx)
+            update_points_tbl(idx);
+        });
+    </script>
 </body>
 </html>
